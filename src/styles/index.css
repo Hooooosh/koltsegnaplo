@@ -2,4 +2,27 @@
   line-height: 1.4;
   font-weight: 400;
   color: #333;
+
+  --primary: rgb(114, 82, 202);
+}
+
+.button-normal {
+  background-color: var(--primary); 
+}
+.button-success {
+  background-color: #1a9447; 
+}
+.button-warning {
+  background-color: #f59e0b ; 
+}
+.button-error {
+  background-color: #dd3f3f; 
+}
+
+/* .card-close-on-idle:not(:hover):not(:has(.card-children>input:active))>.card-children {
+  height: 0;
+} */
+.card-close-on-idle:not(:hover):not(:has(input:focus)):not(:has(input:not(.empty)))>.card-children
+{
+  max-height: 0px;
 }
